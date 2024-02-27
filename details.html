@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border:2px solid lightblue;
+            width:350px;
+            background-color: blanchedalmond;
+        }
+       
+        td{
+            border:2px solid lightcoral;
+            width:170px;
+            background-color: blanchedalmond;
+        }
+    </style>
+     
+</head>
+<body>
+    
+    <script>
+        var one=document.createElement("h1");
+        one.innerText="Details"
+        document.body.appendChild(one)
+        var a=document.createElement("table");
+        a.setAttribute("table-border","1")
+        document.body.appendChild(a);
+        var b=document.createElement("tr");
+        a.appendChild(b);
+        var c=document.createElement("td");
+        c.innerText="Username";
+        a.appendChild(c);
+       var d=document.createElement("td");
+       d.innerHTML=window.localStorage.getItem("Username");
+       a.appendChild(d)
+       var g=document.createElement("tr");
+       document.body.append(g);
+       var h=document.createElement("td");
+       h.innerText="Password"
+       g.appendChild(h);
+       var i=document.createElement("td")
+       i.innerHTML=window.localStorage.getItem("Password")
+       g.appendChild(i);
+       var l=document.createElement("tr");
+       document.body.append(l);
+       var m=document.createElement("td");
+       m.innerText="Email";
+       l.appendChild(m);
+       var n=document.createElement("td")
+       n.innerHTML=window.localStorage.getItem("Email")
+       l.appendChild(n);
+       var p=document.createElement("tr");
+       document.body.append(p);
+       var q=document.createElement("td");
+       q.innerText="DOB";
+       p.appendChild(q);
+       var r=document.createElement("td")
+       r.innerHTML=window.localStorage.getItem("DOB")
+       p.appendChild(r);
+       var x=document.createElement("tr");
+       document.body.append(x);
+       var y=document.createElement("td");
+       y.innerText="Mothername"
+       x.appendChild(y);
+       var z=document.createElement("td")
+       z.innerHTML=window.localStorage.getItem("Mother'sname")
+       x.appendChild(z);
+       
+        
+    </script>
+</body>
+</html>

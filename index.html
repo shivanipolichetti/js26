@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        var g=document.createElement("button")
+        g.innerText="Register";
+        document.body.append(g);
+        g.addEventListener("click",function(){
+            var a=prompt("enter username");
+            var b=prompt("enter password");
+            var c=prompt("enter email")
+            var d=prompt("enter DOB")
+            var e=prompt("enter the mother's name")
+            localStorage.setItem("Username",a)
+            localStorage.setItem("Password",b) 
+            localStorage.setItem("Email",c)
+            localStorage.setItem("DOB",d)
+            localStorage.setItem("Mother'sname",e)          
+        });
+        
+       
+        var h=document.createElement("button");
+        h.innerText="See your details";
+        document.body.appendChild(h);
+        h.setAttribute("style","margin-left:10px;")
+        h.addEventListener("click",function(){
+            window.location.assign("./details.html");
+         });
+
+
+
+        
+       
+
+
+
+        
+       
+    </script>
+</body>
+</html>
